@@ -45,6 +45,8 @@ context "Using ngrok", ngrok: true do
 end
 ```
 
+Custom tunnel options available:
+
 ```ruby
 # custom tunnel options
 Ngrok::Rspec.tunnel = { port: Capybara.server_port, 
