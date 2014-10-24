@@ -1,6 +1,8 @@
 # Ngrok::Rspec
 
-Ngrok-rspec gem allows you to run capybara specs through ngrok.
+Ngrok-rspec gem provides ability to run capybara specs through ngrok.
+
+[![Gem Version](https://badge.fury.io/rb/ngrok-rspec.svg)](http://badge.fury.io/rb/ngrok-rspec)
 
 ## Installation
 
@@ -55,7 +57,7 @@ Ngrok::Rspec.tunnel = { port: Capybara.server_port,
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/ngrok-rspec/fork )
+1. Fork it ( https://github.com/bogdanovich/ngrok-rspec/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
