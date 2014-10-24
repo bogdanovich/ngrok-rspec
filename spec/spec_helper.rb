@@ -17,7 +17,10 @@ RSpec.configure do |config|
   config.include Capybara::DSL
 
   Capybara.server_port = 3001
+  Ngrok::Rspec.tunnel = {port: Capybara.server_port}
+  
   config.include Ngrok::Rspec
+
 
   Capybara.register_driver :poltergeist do |app|
     Capybara::Poltergeist::Driver.new(app,

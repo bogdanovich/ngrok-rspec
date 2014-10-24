@@ -25,8 +25,10 @@ Or install it yourself as:
 Configure rspec
 ```ruby
 RSpec.configure do |config|
-
-  Capybara.server_port = 3001   # any port can be used
+  # any port can be used
+  Capybara.server_port = 3001
+  Ngrok::Rspec.tunnel = { port: Capybara.server_port }
+  
   config.include Ngrok::Rspec
 end
 ```
@@ -41,6 +43,14 @@ context "Using ngrok", ngrok: true do
 end
 ```
 
+```ruby
+# custom tunnel options
+Ngrok::Rspec.tunnel = { port: Capybara.server_port, 
+                        subdomain: 'MY_SUBDOMAIN', 
+                        authtoken: 'MY_TOKEN', 
+                        log: 'ngrok.log', 
+                        config: '~/.ngrok' }
+```
 
 
 ## Contributing
