@@ -39,8 +39,8 @@ Write specs using filter ngrok: true
 
 ```ruby
 context "Using ngrok", ngrok: true do
-  it "should process paypal payment" do
-    # test your sanbox paypal payment for example
+  it "should use ngrok tunnel" do
+    # your test code
   end
 end
 ```
