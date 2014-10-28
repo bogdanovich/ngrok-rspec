@@ -2,7 +2,7 @@
 
 Ngrok-rspec gem provides ability to run capybara specs through ngrok.
 
-[![Gem Version](https://badge.fury.io/rb/ngrok-rspec.svg)](http://badge.fury.io/rb/ngrok-rspec)
+[![Gem Version](https://badge.fury.io/rb/ngrok-rspec.svg)](http://badge.fury.io/rb/ngrok-rspec)  [![Code Climate](https://codeclimate.com/github/bogdanovich/ngrok-rspec/badges/gpa.svg)](https://codeclimate.com/github/bogdanovich/ngrok-rspec)
 
 ## Installation
 
