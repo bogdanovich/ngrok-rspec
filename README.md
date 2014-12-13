@@ -49,11 +49,13 @@ Custom tunnel options available:
 
 ```ruby
 # custom tunnel options
-Ngrok::Rspec.tunnel = { port: Capybara.server_port, 
-                        subdomain: 'MY_SUBDOMAIN', 
-                        authtoken: 'MY_TOKEN', 
-                        log: 'ngrok.log', 
-                        config: '~/.ngrok' }
+Ngrok::Rspec.tunnel = { 
+  port: Capybara.server_port, 
+  subdomain: 'MY_SUBDOMAIN', 
+  authtoken: 'MY_TOKEN', 
+  log: 'ngrok.log', 
+  config: '~/.ngrok' 
+}
 ```
 
 
