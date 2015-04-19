@@ -11,13 +11,13 @@ describe Ngrok::Rspec do
 
   context "with ngrok", ngrok: true do
     it "should have ngrok app_host" do
-      expect(Capybara.app_host =~ /ngrok.com$/).to_not be_nil 
+      expect(Capybara.app_host =~ /ngrok\.io$/).to_not be_nil
     end
   end
 
   context "after ngrok" do
     it "should have default app host" do
-      expect(Capybara.app_host =~ /ngrok.com$/).to be_nil 
+      expect(Capybara.app_host =~ /ngrok\.io$/).to be_nil
     end
   end
 

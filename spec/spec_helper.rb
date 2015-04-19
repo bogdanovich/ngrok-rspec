@@ -18,7 +18,7 @@ RSpec.configure do |config|
 
   Capybara.server_port = 3001
   Ngrok::Rspec.tunnel = {port: Capybara.server_port}
-  
+
   config.include Ngrok::Rspec
 
 
@@ -31,11 +31,7 @@ RSpec.configure do |config|
   if NGROK_SPEC_DEBUG
     Capybara.default_driver = :selenium
   else
-    Capybara.default_driver = :selenium #:poltergeist 
+    Capybara.default_driver = :selenium #:poltergeist
     Capybara.javascript_driver = :selenium #:poltergeist
   end
-
-
-
-
 end
