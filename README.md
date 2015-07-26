@@ -6,6 +6,8 @@ Ngrok-rspec gem provides ability to run capybara specs through ngrok.
 
 ## Installation
 
+*Note:* You must have ngrok v2+ installed available in your `PATH`.
+
 Add this line to your application's Gemfile:
 
 ```ruby
