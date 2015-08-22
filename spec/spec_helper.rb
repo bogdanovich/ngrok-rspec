@@ -31,7 +31,7 @@ RSpec.configure do |config|
   if NGROK_SPEC_DEBUG
     Capybara.default_driver = :selenium
   else
-    Capybara.default_driver = :selenium #:poltergeist
-    Capybara.javascript_driver = :selenium #:poltergeist
+    Capybara.default_driver = :poltergeist
+    Capybara.javascript_driver = :poltergeist
   end
 end

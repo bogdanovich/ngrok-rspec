@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "ngrok-tunnel", "~> 2.0"
-  spec.add_dependency "rspec", "~> 3.1"
-  spec.add_dependency "capybara", "~> 2.4"
+  spec.add_dependency "rspec", ">= 2.99"
+  spec.add_dependency "capybara", ">= 2.4"
 
   spec.add_development_dependency "pry", "~> 0.10"
   spec.add_development_dependency "pry-byebug", "~> 2.0"
